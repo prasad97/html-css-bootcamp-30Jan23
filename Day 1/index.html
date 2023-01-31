@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Learning HTML</title>
+</head>
+<body>
+    <!-- You dont need a closing tag if your tag doesnt contain any content. -->
+
+   <!-- Heading Tags -->
+   <!-- every page should have 1 h1 tag only -->
+   <h1>Heading 1</h1>
+   <h2>Heading 2</h2>
+   <h3>Heading 3</h3>
+   <h4>Heading 4</h4>
+   <h5>Heading 5</h5>
+   <h6>Heading 6</h6>
+
+   <p>What is the default font size in HTML page?</p>
+   <br>
+   <p>What is the default font size in HTML page?</p>
+
+
+   <pre>
+    My name is prasad. What
+                I am learning Web development
+        I like JS!
+   </pre>
+
+   <hr>
+
+   <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quas consequatur eos placeat dignissimos.</span>
+   <br><br>
+
+   <span>Laboriosam quo, fuga explicabo asperiores sint dolores architecto dolorem nostrum iusto.</span>
+ 
+    <!-- Hyperlinks -->
+    <!-- <p>Go to google</p> -->
+    <a href="https://google.co.in" target="_blank">Go to Google</a>
+
+   <!-- Lists -->
+   <!-- Ordered Lists -->
+   <h3>Ordered Lists</h3>
+   <ol type="i" start="5">
+        <li>Potato</li>
+        <li>Apples</li>
+        <li>Milk</li>
+        <li>Rice</li>
+   </ol>
+
+   <!-- Unordered Lists -->
+   <h3>Unordered Lists</h3>
+   <ul type="disc">
+        <li>Potato</li>
+        <li>Apples</li>
+        <li>Milk</li>
+        <li>Rice</li>
+    </ul>
+
+
+    <!-- Superscript and Subscript -->
+    <span>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></span>
+    <br><br>
+    <span>H<sub>2</sub>O</span>
+    <span>&Afr;</span>
+
+   <!-- Images -->
+   <img src="https://wallpapers.com/images/hd/stylish-modern-white-jaguar-car-buf4kwkhwsm3384v.jp" width="400px" alt="jaguar car image">
+    <br>
+    <!-- Sytling Tags -->
+    <b>This a bold text</b>
+    <i>This is an italic text</i>
+    <u>This is underline text</u>
+
+    <br>
+    <strong>This is strong text</strong>
+    <em>This is emphasize text</em>
+
+    <del>This is deleted text</del>
+
+   <!-- Tables -->
+   <hr>
+   <h2>Tables</h2>
+   <!-- 
+    tr - table row
+    td - table data
+    th - table heading (makes text bold and centered)
+    rowspan - span value to multiple rows
+    colspan - span value to multiple columns
+    -->
+   <table border="1">
+    <tr>
+      <th>Sr. No</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td colspan="2">Prasad</td>
+        <!-- <td>26</td> -->
+        <td rowspan="2">Mumbai</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Sandesh</td>
+        <td>23</td>
+        
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Vinay</td>
+        <td>25</td>
+        <td>Varanasi</td>
+    </tr>
+   </table>
+
+   <!-- Forms -->
+   <hr>
+   <h2>Forms</h2>
+   <form action="/login">
+    <!-- <span>Enter Name : </span>
+    <input type="text" placeholder="Enter Name"> 
+    <br>
+    <span>Enter Email : </span> 
+    <input type="email" placeholder="Enter Name"> -->
+
+    <label for="name">Enter Name :</label>
+    <input type="text" id="name" name="name">
+        <br>
+    <label for="email">Enter Email :</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="pass">Enter Password :</label>
+    <input type="password" id="pass" name="password" required>
+        <br>
+        <label for="age">Enter Age :</label>
+    <input type="number" id="age" name="age" required >
+    <br>
+        <label for="resume">Upload File :</label>
+    <input type="file" id="resume" name="resume" required >
+    <input type="submit" value="Submit">
+   </form>
+
+   <!-- http://127.0.0.1:5500/?name=Prasad&email=prasad%40gmail.com&password=123456789
+
+   http://127.0.0.1:5500/login?name=Jescie+Tate&email=kyhez%40mailinator.com&password=Pa%24%24w0rd%21 -->
+
+   <hr>
+   <!-- Video -->
+   <h2>Video</h2>
+   <video width="400" autoplay muted controls>
+    <source src="videoplayback.mp4">
+   </video>
+
+   <audio autoplay muted controls>
+    <source src="videoplayback.mp4">
+   </audio>
+
+   <!-- Maps -->
+   <hr>
+   <h2>Maps</h2>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.95410697018!2d2.276995212836463!3d48.85883363928723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sin!4v1675173936841!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   <!-- Youtube -->
+   <hr>
+   <h2>Youtube Video</h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/mT1UmyGWanw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+</body>
+</html>
