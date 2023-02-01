@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container {
+    background-color: lightblue;
+    height: 400px;
+    width: 400px;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    /* flex-direction: row-reverse; */
+    
+}
+
+.one{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    font-size: 24px;
+    /* display: inline-block; */
+    /* float: left; */
+    
+}
+
+.two{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    font-size: 24px;
+    /* align-self: flex-start; */
+    /* float: left; */
+}
+
+.three{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    font-size: 24px;
+    /* clear: left; */
+}
+
+.four{
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    font-size: 24px;
+    /* align-self: flex-end; */
+}
