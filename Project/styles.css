@@ -1,0 +1,125 @@
+/* Global CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto','sans-serif';
+    color:black;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Global CSS Ends */
+.container{
+    height: auto;
+    width:90%;
+    /* background-color: red; */
+    margin: 0 auto;
+}
+
+.header{
+    height: 70px;
+    width:100%;
+    
+    /* background-color: lightgray; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero{
+    height:400px;
+    width:100%;
+    background-color: yellowgreen;
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left{
+    height:400px;
+    width:70%;
+    background-color: coral;
+}
+
+.right{
+    height:400px;
+    width:30%;
+    background-color: dodgerblue;
+}
+
+.related{
+    height:400px;
+    width:100%;
+    background-color: forestgreen;
+}
+
+.footer{
+    height:400px;
+    width:100%;
+    background-color: fuchsia;
+}
+
+/* Navbar Styles */
+
+.brand-logo{
+    height:70px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    /* margin-right: 4rem; */
+}
+
+.nav-items li {
+    padding:10px 15px;
+    
+}
+
+.nav-items li > a:hover{
+    color: #ff6600;
+    transition: 1.5s;
+}
+
+
+/* Banner */
+.banner{
+    display: flex;
+}
+
+.banner-content{
+    width: 70%;
+}
+
+.banner-text-container{
+    width:100%;
+    height:150px;
+    background-color: yellow;
+}
+
+.banner-img{
+    width: 30%;
+}
+
+.banner-img img{
+    background-size: cover;
+}
