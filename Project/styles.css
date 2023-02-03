@@ -10,6 +10,16 @@
 body {
     font-family: 'Roboto','sans-serif';
     color:black;
+    background-color: #F5F5F5;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+section,main,footer{
+    padding: 30px 0;
 }
 
 a, a:visited {
@@ -19,6 +29,57 @@ a, a:visited {
 
 li {
     list-style-type: none;
+}
+
+.is-size-1 {
+    font-size: 3rem !important;
+}
+.is-size-2 {
+    font-size: 2.5rem !important;
+}
+.is-size-3 {
+    font-size: 2rem !important;
+}
+.is-size-4 {
+    font-size: 1.5rem !important;
+}
+.is-size-5 {
+    font-size: 1.25rem !important;
+}
+.is-size-6 {
+    font-size: 1rem !important;
+}
+.is-size-7 {
+    font-size: 0.75rem !important;
+}
+
+.is-flex{
+    display: flex !important;
+}
+
+.has-flex-wrap{
+    flex-wrap: wrap !important;
+}
+
+.has-background-black{
+    background-color: black !important;
+    color: white !important;
+}
+.has-background-white{
+    background-color: white !important;
+    color: black !important;
+}
+
+.has-text-centered{
+    text-align: center !important;
+}
+
+.p-1 {
+    padding: 0.75rem !important;
+}
+
+.has-text-grey{
+    color: #7A7A7A !important;
 }
 
 
@@ -33,8 +94,7 @@ li {
 .header{
     height: 70px;
     width:100%;
-    
-    /* background-color: lightgray; */
+    background-color: white;
 }
 
 .navbar{
@@ -44,9 +104,9 @@ li {
 }
 
 .hero{
-    height:400px;
+    /* height:400px; */
     width:100%;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
 
 .main-content{
@@ -57,13 +117,13 @@ li {
 .left{
     height:400px;
     width:70%;
-    background-color: coral;
+    /* background-color: coral; */
 }
 
 .right{
-    height:400px;
+    /* height:400px; */
     width:30%;
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
 }
 
 .related{
@@ -107,19 +167,92 @@ li {
 }
 
 .banner-content{
-    width: 70%;
+    width: 60%;
 }
 
 .banner-text-container{
-    width:100%;
-    height:150px;
-    background-color: yellow;
+    width:80%;
+    padding-bottom: 30px;
+    /* height:150px; */
+    /* background-color: yellow; */
 }
 
 .banner-img{
-    width: 30%;
+    width: 40%;
 }
 
 .banner-img img{
-    background-size: cover;
+    width: 100%;
+}
+
+.banner-title-container{
+    /* padding:10px; */
+    /* background-color: white; */
+}
+
+/* Progress Bar */
+.banner-progress-container{
+    border-bottom: 1px solid lightgray;
+}
+.progress-text{
+    display: inline-block;
+}
+
+.progress-bar-container{
+    position: relative;
+}
+
+.banner-progress-bar{
+    height: 35px;
+    width: 100%;
+}
+
+.banner-progress-bar-text{
+    position: absolute;
+    top:7px;
+    left: 50%;
+}
+
+/* Banner Link */
+.banner-links{
+    gap:10px;
+}
+.banner-link-btn{
+    padding: 10px 25px;
+    border: 1px solid black;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.link-container{
+    margin-right: 15px;
+}
+
+.link-title{
+    padding: 10px 0;
+}
+
+/* Main Content */
+/* Right */
+.right img{
+    width:100%;
+}
+
+/* Left */
+.main-text-container, .main-search-container{
+    width:50%;
+}
+
+.search-bar{
+    background-color:white;
+    color: grey;
+    border-radius: 25px;
+}
+
+.search-bar > input :active{
+   outline:none;
+   border: none;
+}
+.main-heading-title{
+    padding-left:10px;
 }
