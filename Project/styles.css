@@ -31,6 +31,8 @@ li {
     list-style-type: none;
 }
 
+
+/* Font Sizes */
 .is-size-1 {
     font-size: 3rem !important;
 }
@@ -57,6 +59,8 @@ li {
     display: flex !important;
 }
 
+/* Font Sizes End */
+
 .has-flex-wrap{
     flex-wrap: wrap !important;
 }
@@ -68,6 +72,11 @@ li {
 .has-background-white{
     background-color: white !important;
     color: black !important;
+}
+
+.has-background-primary{
+    background-color: #ff6600 !important;
+    color: white !important;
 }
 
 .has-text-centered{
@@ -82,11 +91,37 @@ li {
     color: #7A7A7A !important;
 }
 
+.tag{
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px 20px;
+    font-weight: 800 !important;
+}
+
+.btn{
+    padding: 5px 10px !important;
+    border-radius: 12px !important;
+}
+
+
+.is-finished{
+    background-color: #00a123;
+    color:white
+}
+
+.is-upcoming{
+    background-color: #167df0;
+    color:white
+}
+
+
+
 
 /* Global CSS Ends */
 .container{
     height: auto;
-    width:90%;
+    width:90% !important;
     /* background-color: red; */
     margin: 0 auto;
 }
@@ -95,6 +130,12 @@ li {
     height: 70px;
     width:100%;
     background-color: white;
+
+    /* For Blur */
+    /* background-color: rgba(255, 255, 255, 0.752) !important;
+    position:fixed;
+    top:0;
+    z-index: 9999; */
 }
 
 .navbar{
@@ -107,6 +148,7 @@ li {
     /* height:400px; */
     width:100%;
     /* background-color: yellowgreen; */
+    margin-top: 70px;
 }
 
 .main-content{
@@ -115,21 +157,22 @@ li {
 }
 
 .left{
-    height:400px;
+    /* height:400px; */
     width:70%;
     /* background-color: coral; */
 }
 
 .right{
-    /* height:400px; */
+    /* height:400px auto; */
     width:30%;
     /* background-color: dodgerblue; */
+    
 }
 
 .related{
-    height:400px;
+    /* height:400px; */
     width:100%;
-    background-color: forestgreen;
+    /* background-color: forestgreen; */
 }
 
 .footer{
@@ -186,7 +229,8 @@ li {
 }
 
 .banner-title-container{
-    /* padding:10px; */
+    padding:10px;
+    font-size: 1.5rem;
     /* background-color: white; */
 }
 
@@ -225,7 +269,11 @@ li {
 }
 
 .link-container{
-    margin-right: 15px;
+    margin-right: 10px;
+}
+
+.link-container:nth-child(2){
+    border-left: 1px solid lightgrey;
 }
 
 .link-title{
@@ -239,6 +287,7 @@ li {
 }
 
 /* Left */
+
 .main-text-container, .main-search-container{
     width:50%;
 }
@@ -255,4 +304,121 @@ li {
 }
 .main-heading-title{
     padding-left:10px;
+}
+
+.main-heading-search,.fa-search{
+    padding-left: 15px;
+}
+
+/* Classes */
+.class-container{
+    /* height:400px; */
+    width: 100%;
+    /* background-color: powderblue; */
+}
+
+.class{
+    /* background-color: #ff6600; */
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    /* margin: 15px 0; */
+    border-radius: 8px;
+    /* border: 1px solid black; */
+}
+
+.class-date-container{
+    gap:15px;
+    align-items: center;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0px 0 1px rgb(10 10 10 / 2%);
+}
+
+.class-details-wrapper{
+    /* background-color:lightgrey; */
+    justify-content: space-between;
+}
+
+.class-details-container{
+    width: 60%;
+}
+
+.class-attendance-container, .class-video-container{
+    width: 20%;
+}
+
+/* .class-attendance-container{
+    border: 1px solid grey;
+} */
+
+/* Related Programs */
+.related-program-container{
+    /* background-color: powderblue; */
+    width: 25%;
+}
+
+.related-program{
+    /* border: 1px solid black; */
+    background-color: white;
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+.related-program-date{
+    padding: 5px;
+}
+
+.related-program-details{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 1rem;
+}
+
+.related-program-logo{
+    width: 30%;
+}
+
+.related-program-logo > img{
+    width: 100%;
+}
+
+.related-program-tags{
+    gap: 10px;
+}
+
+.fa-star{
+    color: lightgrey;
+}
+
+.is-checked{
+    color: orange !important;
+}
+
+.related-program-price{
+    padding: 15px;
+    background-color:#fff3eb;
+    color:#ff6600;
+    border-radius: 10px;
+}
+.related-program-price-text{
+    margin-left: 10px;
+}
+
+
+
+/* Footer */
+
+
+
+/* Whatsapp Button */
+
+.whatsapp-btn{
+    background-color: #25d366;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    margin:1rem;
+    border-radius: 20px;
+    padding:5px 10px;
+    color:white;
 }
